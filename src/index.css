@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #F9F9F9;
+    --accent-red: #E53935;
+    --accent-red-hover: #c62828;
+    --accent-red-subtle: rgba(229, 57, 53, 0.08);
+    --border-hairline: rgba(0, 0, 0, 0.08);
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: #1a1a1a;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(229, 57, 53, 0.15);
+    color: #b71c1c;
+  }
+}
+
+/* Custom architectural / forensic laboratory utility rules */
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-editorial-serif {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+/* Subtle architectural grid pattern for laboratory backdrops */
+.bg-grid-schematic {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+}
+
+.bg-dot-matrix {
+  background-size: 16px 16px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+}
+
+/* Custom scrollbars for data tables and logs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E53935;
+}

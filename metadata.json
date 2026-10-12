@@ -1,0 +1,6 @@
+{
+  "name": "Demopocrisy | Forensic Laboratory & Archive",
+  "description": "A dual-purpose forensic repository, systemic discrepancy audit, and interactive investigative archive of procedural justice and institutional due process (2021–2026).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
